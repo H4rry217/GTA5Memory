@@ -18,7 +18,7 @@ namespace GTA5Memory_UI
 
         public static void Init()
         {
-            String filename = Process.GetCurrentProcess().MainModule.FileName.Replace(Process.GetCurrentProcess().MainModule.ModuleName, "") + "PositionList.txt";
+            string filename = Process.GetCurrentProcess().MainModule.FileName.Replace(Process.GetCurrentProcess().MainModule.ModuleName, "") + "PositionList.txt";
             if (!File.Exists(filename))
             {
                 StreamWriter sw = File.CreateText(filename);
@@ -34,7 +34,7 @@ namespace GTA5Memory_UI
         {
             StreamReader sr = new StreamReader(GTA5Process.PositionFile);
 
-            String txt = sr.ReadToEnd();
+            string txt = sr.ReadToEnd();
 
             sr.Close();
 

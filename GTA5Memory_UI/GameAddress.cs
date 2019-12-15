@@ -7,17 +7,17 @@ namespace GTA5Memory_UI
 
         public static long BaseAddress;
 
-        public static int WorldPTR = 0x249C050;//20190724
-        public static int AmmoPTR = 0xED45C9;//20190724
+        public static int WorldPTR = 0x24B0C50;//20191215
+        public static int AmmoPTR = 0xEE2A89;//20191215
         public static int ClipPTR = 0xED4584;
-        public static int BlipPTR = 0x1F21C40;//20190724
+        public static int BlipPTR = 0x1F373D0;//20191215
         public static int PointerAddressA = 0x2D0F3F0;//20181230
         public static int PlayerCountPTR = 0x2894C40;// 20190725 XXXXX
-        public static int PlayerCountPTR_STATIC = 0x1F1EC50; //20190726
+        public static int PlayerCountPTR_STATIC = 0x1F339D0; //20190726
         public static int GlobalPTR = 0x224D43;//20190725
-        public static int GlobalPTR2 = 0x2D2EE60;//20190805
-        public static int PlayerPTR = 0x1D68738;//20190725
-        public static int ReplayInterface = 0x1E97418;//20190724
+        public static int GlobalPTR2 = 0x2D46192;//20191215
+        public static int ReplayInterface = 0x1EAC198;//20190724
+        public static int PlayerPTR = 0x1D7D4C0;//20190724
 
         /*
         WorldPTR -> 48 8B 05 ? ? ? ? 45 ? ? ? ? 48 8B 48 08 48 85 C9 74 07

@@ -444,13 +444,13 @@ namespace GTA5Memory_UI
         private void BUTTON_Debug_Click(object sender, EventArgs e)
         {
 
-            long pointer1 = Memory.FindPattern(new byte[] { 0x48, 0x8B, 0x05, 0x0, 0x0, 0x0, 0x0, 0x45, 0x0, 0x0, 0x0, 0x0, 0x48, 0x8B, 0x48, 0x08, 0x48, 0x85, 0xC9, 0x74, 0x07}, "xxx????x????xxxxxxxxx");
+            //long pointer1 = Memory.FindPattern(new byte[] { 0x48, 0x8B, 0x05, 0x0, 0x0, 0x0, 0x0, 0x45, 0x0, 0x0, 0x0, 0x0, 0x48, 0x8B, 0x48, 0x08, 0x48, 0x85, 0xC9, 0x74, 0x07}, "xxx????x????xxxxxxxxx");
             //var addr = Memory.FindPattern(new byte[] { 0x4C, 0x8D, 0x05, 0x0, 0x0, 0x0, 0x0, 0x4D, 0x8B, 0x08, 0x4D, 0x85, 0xC9, 0x74, 0x11 }, "xxx????xxxxxxxx");
-            long WorldPTR = pointer1 + Memory.ReadInteger(GameAddress.BaseAddress + pointer1 + 3, 4) + 7;
+            //long WorldPTR = pointer1 + Memory.ReadInteger(GameAddress.BaseAddress + pointer1 + 3, 4) + 7;
             //MessageBox.Show(Convert.ToString(WorldPTR, 16));
 
             //Memory.WriteFloat(Memory.GetPointerAddress(GameAddress.BaseAddress + GameAddress.WorldPTR, GameAddress.OFFSETS_Max_HP), 1000);
-            MessageBox.Show(Memory.ReadFloat(Memory.GetPointerAddress(GameAddress.BaseAddress + GameAddress.WorldPTR, GameAddress.OFFSETS_Max_HP)) + "");
+            MessageBox.Show(Memory.ReadFloat(Memory.GetPointerAddress(GameAddress.BaseAddress + GameAddress.WorldPTR, GameAddress.OFFSETS_X)) + "");
             /*Form f2 = new Form();
             f2.BackColor = Color.White;
             f2.TransparencyKey = Color.White;

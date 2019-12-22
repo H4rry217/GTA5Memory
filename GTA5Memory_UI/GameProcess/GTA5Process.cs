@@ -158,7 +158,6 @@ namespace GTA5Memory_UI.GameProcess
                     }
                 }
 
-
                 return DLLBaseAddress.BaseAddress.ToInt64();
             }
             catch

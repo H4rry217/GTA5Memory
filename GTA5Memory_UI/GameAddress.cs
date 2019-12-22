@@ -59,8 +59,8 @@ namespace GTA5Memory_UI
         public static int[] OFFSETS_VEHICLE_Y = new int[] { 0x8, 0xD28, 0x30, 0x54 };
         public static int[] OFFSETS_VEHICLE_Z = new int[] { 0x8, 0xD28, 0x30, 0x58 };
 
-        public static int OFFSETS_WAYPOINT_X = 0x1F329B8;
-        public static int OFFSETS_WAYPOINT_Y = 0x1F329BC;
+        public static int OFFSETS_WAYPOINT_X = 0x1F47738;//CANT USE
+        public static int OFFSETS_WAYPOINT_Y = 0x1F4773C;//CANT USE
 
         //speed
         public static int[] SprintSpeed = new int[] { 0x08, 0x10b8, 0x14C };

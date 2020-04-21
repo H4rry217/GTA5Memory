@@ -449,8 +449,8 @@ namespace GTA5Memory_UI
             //long WorldPTR = pointer1 + Memory.ReadInteger(GameAddress.BaseAddress + pointer1 + 3, 4) + 7;
             //MessageBox.Show(Convert.ToString(WorldPTR, 16));
 
-            //Memory.WriteFloat(Memory.GetPointerAddress(GameAddress.BaseAddress + GameAddress.WorldPTR, GameAddress.OFFSETS_Max_HP), 1000);
-            MessageBox.Show(Memory.ReadFloat(Memory.GetPointerAddress(GameAddress.BaseAddress + GameAddress.WorldPTR, GameAddress.OFFSETS_X)) + "");
+            Memory.WriteFloat(Memory.GetPointerAddress(GameAddress.BaseAddress + GameAddress.WorldPTR, GameAddress.OFFSETS_HP), 0);
+            //MessageBox.Show(Memory.ReadFloat(Memory.GetPointerAddress(GameAddress.BaseAddress + GameAddress.WorldPTR, GameAddress.OFFSETS_X)) + "");
             /*Form f2 = new Form();
             f2.BackColor = Color.White;
             f2.TransparencyKey = Color.White;
@@ -839,7 +839,7 @@ namespace GTA5Memory_UI
 
         private void BUTTON_Macro_Click(object sender, EventArgs e)
         {
-            if (MacroSwitch)
+            /*if (MacroSwitch)
             {
                 if (myKeyEventHandeler != null)
                 {
@@ -862,7 +862,7 @@ namespace GTA5Memory_UI
                 myMouseHandeler = new MouseEventHandler(hook_MouseButtonDown);
                 m_hook.OnMouseActivity += myMouseHandeler;//钩住键按下
                 m_hook.Start();//安装鼠标钩子
-            }
+            }*/
 
             MacroSwitch = !MacroSwitch;
             BUTTON_Macro.BackgroundImage = MacroSwitch ? Properties.Resources.switch_on : Properties.Resources.switch_off;

@@ -45,7 +45,7 @@ namespace GTA5Memory_UI
         public static int[] OFFSETS_Player_Name_Local = new int[] { 0x08, 0x10B8, 0x7C };
         public static int OFFSETS_Player_Name = 0x451CEC;
         public static int[] OFFSETS_Ragdoll = new int[] { 0x08, 0x10A8};
-        public static int[] OFFSETS_WANTED_LEVEL = new int[] { 0x08 , 0x10B8 , 0x818};
+        public static int[] OFFSETS_WANTED_LEVEL = new int[] { 0x08 , 0x10B8 , 0x848};
         public static int[] OFFSETS_LAST_SHOOT_POS_X = new int[] { 0x08, 0x10C8, 0x1B0 };
         public static int[] OFFSETS_LAST_SHOOT_POS_Y = new int[] { 0x08, 0x10C8, 0x1B4 };
         public static int[] OFFSETS_LAST_SHOOT_POS_Z = new int[] { 0x08, 0x10C8, 0x1B8 };

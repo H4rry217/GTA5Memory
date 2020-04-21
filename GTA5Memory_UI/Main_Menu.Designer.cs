@@ -32,6 +32,7 @@
             this.BUTTON_About = new System.Windows.Forms.Button();
             this.BUTTON_Refresh = new System.Windows.Forms.Button();
             this.VehiclePage = new System.Windows.Forms.TabPage();
+            this.button_ChangeCarColor = new System.Windows.Forms.Button();
             this.label_color3 = new System.Windows.Forms.Label();
             this.label_color2 = new System.Windows.Forms.Label();
             this.label_color1 = new System.Windows.Forms.Label();
@@ -131,7 +132,6 @@
             this.LABLE = new System.Windows.Forms.Label();
             this.BUTTON_Macro = new System.Windows.Forms.Button();
             this.BUTTON_ESP = new System.Windows.Forms.Button();
-            this.button_ChangeCarColor = new System.Windows.Forms.Button();
             this.VehiclePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -209,6 +209,17 @@
             this.VehiclePage.TabIndex = 1;
             this.VehiclePage.Text = "Vehicle";
             this.VehiclePage.UseVisualStyleBackColor = true;
+            // 
+            // button_ChangeCarColor
+            // 
+            this.button_ChangeCarColor.BackColor = System.Drawing.Color.RosyBrown;
+            this.button_ChangeCarColor.Location = new System.Drawing.Point(324, 96);
+            this.button_ChangeCarColor.Name = "button_ChangeCarColor";
+            this.button_ChangeCarColor.Size = new System.Drawing.Size(211, 23);
+            this.button_ChangeCarColor.TabIndex = 26;
+            this.button_ChangeCarColor.Text = "1-VehicleColor";
+            this.button_ChangeCarColor.UseVisualStyleBackColor = false;
+            this.button_ChangeCarColor.Click += new System.EventHandler(this.Button_ChangeCarColor_Click);
             // 
             // label_color3
             // 
@@ -996,6 +1007,7 @@
             this.LABLE_Godmode.Size = new System.Drawing.Size(47, 12);
             this.LABLE_Godmode.TabIndex = 1;
             this.LABLE_Godmode.Text = "Godmode";
+            this.LABLE_Godmode.Visible = false;
             // 
             // BUTTON_Godmode
             // 
@@ -1006,6 +1018,7 @@
             this.BUTTON_Godmode.Size = new System.Drawing.Size(54, 23);
             this.BUTTON_Godmode.TabIndex = 0;
             this.BUTTON_Godmode.UseVisualStyleBackColor = true;
+            this.BUTTON_Godmode.Visible = false;
             this.BUTTON_Godmode.Click += new System.EventHandler(this.BUTTON_Godmode_Click);
             // 
             // Pages
@@ -1340,6 +1353,7 @@
             this.BUTTON_Macro.TabIndex = 7;
             this.BUTTON_Macro.Text = "Macro";
             this.BUTTON_Macro.UseVisualStyleBackColor = true;
+            this.BUTTON_Macro.Visible = false;
             this.BUTTON_Macro.Click += new System.EventHandler(this.BUTTON_Macro_Click);
             // 
             // BUTTON_ESP
@@ -1353,17 +1367,6 @@
             this.BUTTON_ESP.Text = "ESP";
             this.BUTTON_ESP.UseVisualStyleBackColor = true;
             this.BUTTON_ESP.Click += new System.EventHandler(this.BUTTON_ESP_Click);
-            // 
-            // button_ChangeCarColor
-            // 
-            this.button_ChangeCarColor.BackColor = System.Drawing.Color.RosyBrown;
-            this.button_ChangeCarColor.Location = new System.Drawing.Point(324, 96);
-            this.button_ChangeCarColor.Name = "button_ChangeCarColor";
-            this.button_ChangeCarColor.Size = new System.Drawing.Size(211, 23);
-            this.button_ChangeCarColor.TabIndex = 26;
-            this.button_ChangeCarColor.Text = "1-VehicleColor";
-            this.button_ChangeCarColor.UseVisualStyleBackColor = false;
-            this.button_ChangeCarColor.Click += new System.EventHandler(this.Button_ChangeCarColor_Click);
             // 
             // Main_Menu
             // 
